@@ -1,0 +1,70 @@
+{
+  "name": "OauthScopes",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "mysql": {
+    "schema": "quantimodo",
+    "table": "oauth_scopes"
+  },
+  "properties": {
+    "type": {
+      "type": "String",
+      "required": true,
+      "length": 255,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "type",
+        "dataType": "varchar",
+        "dataLength": 255,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "scope": {
+      "type": "String",
+      "required": false,
+      "length": 2000,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "scope",
+        "dataType": "varchar",
+        "dataLength": 2000,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "clientId": {
+      "type": "String",
+      "required": false,
+      "length": 80,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "client_id",
+        "dataType": "varchar",
+        "dataLength": 80,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": []
+}

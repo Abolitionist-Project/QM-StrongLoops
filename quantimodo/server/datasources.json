@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "qm_services": {
+    "host": "services.quantimo.do",
+    "port": 3306,
+    "url": "services.quantimo.do",
+    "database": "quantimodo",
+    "password": "B1ggerstaff!",
+    "name": "qm_services",
+    "user": "quantimodo",
+    "connector": "mysql"
+  }
+}

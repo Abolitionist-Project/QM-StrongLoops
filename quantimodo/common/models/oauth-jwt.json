@@ -1,0 +1,71 @@
+{
+  "name": "OauthJwt",
+  "base": "PersistedModel",
+  "idInjection": false,
+  "mysql": {
+    "schema": "quantimodo",
+    "table": "oauth_jwt"
+  },
+  "properties": {
+    "clientId": {
+      "type": "String",
+      "id": true,
+      "required": true,
+      "length": 80,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "client_id",
+        "dataType": "varchar",
+        "dataLength": 80,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      },
+      "_selectable": false
+    },
+    "subject": {
+      "type": "String",
+      "required": false,
+      "length": 80,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "subject",
+        "dataType": "varchar",
+        "dataLength": 80,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    },
+    "publicKey": {
+      "type": "String",
+      "required": false,
+      "length": 2000,
+      "precision": null,
+      "scale": null,
+      "mysql": {
+        "columnName": "public_key",
+        "dataType": "varchar",
+        "dataLength": 2000,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      },
+      "_selectable": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
+  "methods": []
+}

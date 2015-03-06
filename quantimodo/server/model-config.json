@@ -1,0 +1,125 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Connections": {
+    "dataSource": "qm_services",
+    "public": false
+  },
+  "ApiKeys": {
+    "dataSource": "qm_services",
+    "public": false
+  },
+  "Connectors": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "Correlations": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "Credentials": {
+    "dataSource": "qm_services",
+    "public": false
+  },
+  "Measurements": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "OauthAccessTokens": {
+    "dataSource": "qm_services",
+    "public": false
+  },
+  "OauthAuthorizationCodes": {
+    "dataSource": "qm_services",
+    "public": false
+  },
+  "OauthClients": {
+    "dataSource": "qm_services",
+    "public": false
+  },
+  "OauthJwt": {
+    "dataSource": "qm_services",
+    "public": false
+  },
+  "OauthRefreshTokens": {
+    "dataSource": "qm_services",
+    "public": false
+  },
+  "OauthScopes": {
+    "dataSource": "qm_services",
+    "public": false
+  },
+  "OauthUsers": {
+    "dataSource": "qm_services",
+    "public": false
+  },
+  "Sources": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "Tags": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "UnitCategories": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "UnitConversions": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "Units": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "Updates": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "VariableCategories": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "VariablePermissions": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "VariableUserSettings": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "VariableUserSources": {
+    "dataSource": "qm_services",
+    "public": true
+  },
+  "Variables": {
+    "dataSource": "qm_services",
+    "public": true
+  }
+}
